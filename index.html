@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Website</title>
+
+    <link
+      rel="stylesheet"
+      href="/mini-course-temperature/assets/fontawesome-free-6.4.0-web/"
+    />
+    <link rel="stylesheet" href="/mini-course-temperature/css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <a href="#">Temperature <span>Website</span>.</a>
+      </header>
+
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="input"> Celcius (&#8451;)</label>
+          <textarea
+            name="input-temp"
+            id="input-temp"
+            cols="30"
+            rows="3"
+          ></textarea>
+          <i class="fas fa-circle-check"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="btn-control">
+          <button type="submit" class="submit">Konversi</button>
+          <button type="reset" class="reset">Reset</button>
+          <button class="reverse">Reverse</button>
+        </div>
+
+        <div class="form-control">
+          <label for="temp-info">Temp</label>
+          <textarea
+            name="output-temp"
+            id="output-temp"
+            cols="30"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="form-control">
+          <label for="calc">Cara Kalkulasi</label>
+          <textarea name="step" id="step" cols="30" rows="3"></textarea>
+        </div>
+        <small>Fahrenheit to Celcius</small>
+      </form>
+
+      <p>
+        Suhu S dalam derajat Fahrenheit () sama dengan suhu S dalam derajat
+        Celcius (&#8451;) kali 9/5 tambah 32.
+      </p>
+    </section>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
